@@ -3,121 +3,102 @@ import "./App.css"
 function App() {
   return (
     <>
-      <div className="title">
-        <h1>Kevin Duhamel Hayes</h1>
+    <main>
+      <div className="title-section">
+        <h1 className="main-title">Kevin Duhamel Hayes</h1>
+        <h2 className="subtitle">
+          Desarrollador Front-End en continuo aprendizaje
+        </h2>
       </div>
-      <div className="sub-title">
-        <h2 className="subtitle">DEV front-end en continuo aprendisaje</h2>
-      </div>
+
       <div className="container">
         <div className="grid-30-70">
-          <div className="grid-colum-1">
-            <div>
-              <h2 className="about-me-h2">sobre mi</h2>
-              <p className="p-about-me">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-                quibusdam, vero quas dolorum mollitia animi cum dolores
-                reprehenderit quia. Corporis voluptates deleniti tempore quod,
-                tenetur aliquam repudiandae optio voluptate in quia dolore
-                possimus magnam temporibus incidunt eum minima, iure blanditiis
-                sit minus, dolorum quam molestiae sed at! Praesentium, labore.
-                Nihil, maiores maxime?
+          <div className="side-panel">
+            <section className="about-section">
+              <h2 className="section-title">Sobre mí</h2>
+              <p className="section-description">
+                Soy Kevin, un apasionado desarrollador front-end. Nací el
+                07/11/1992 y vivo en Argentina. Me encanta enfrentar nuevos
+                desafíos y aprender constantemente en el ámbito del desarrollo
+                web.
               </p>
-            </div>
-            <div>
-              <h2 className="about-me-h2">contacto</h2>
-              <li>
-                <a href=""></a>email
-              </li>
-              <li>
-                <a href=""></a> github
-              </li>
-              <li>
-                <a href=""></a> linkedin
-              </li>
-            </div>
-          </div>
-          <div className="grid-colum-2">
-            <div>
-              <h2>experiencia laboral</h2>
-              <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Tempora?
-              </p>
-              <ul>
-                <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+            </section>
+
+            <section className="contact-section">
+              <h2 className="section-title">Contacto</h2>
+              <ul className="contact-list">
+                <li className="contact-item">
+                  <a href="mailto:tuemail@example.com">Email</a>
+                </li>
+                <li className="contact-item">
+                  <a href="https://github.com/tu_usuario">GitHub</a>
+                </li>
+                <li className="contact-item">
+                  <a href="https://www.linkedin.com/in/tu_usuario/">LinkedIn</a>
+                </li>
               </ul>
-              <div className="educacion">
-                <h2>educacion</h2>
-                <h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam, voluptatum.
-                </p>
-                <h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam, voluptatum.
-                </p>
-                <h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam, voluptatum.
-                </p>
-                <h3>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quisquam, voluptatum.
-                </p>
-              </div>
-              <h2>habilidades</h2>
-              <div className="habilidades">
-                <ul>
-                  {" "}
-                  <h2>leguages</h2>
-                  <li>html</li>
-                  <li>css</li>
-                  <li>javascript</li>
-                  <li>react</li>
-                  <li>git</li>
-                  <li>github</li>
+            </section>
+          </div>
+
+          <div className="main-panel">
+            <section className="experience-section">
+              <h2 className="section-title">Experiencia laboral</h2>
+              <h3 className="job-title">
+                Desarrollador Front-End en [Nombre de la empresa]
+              </h3>
+              <p className="job-description">
+                En este puesto trabajé en varios proyectos utilizando
+                tecnologías modernas y colaboré activamente con equipos
+                multidisciplinarios.
+              </p>
+            </section>
+
+            <section className="education-section">
+              <h2 className="section-title">Educación</h2>
+              <h3 className="course-title">
+                Grado en Ingeniería Informática - [Nombre de la Universidad]
+              </h3>
+              <p className="course-description">
+                Durante mi formación, adquirí habilidades fundamentales en
+                programación y diseño web.
+              </p>
+            </section>
+
+            <section className="skills-section">
+              <h2 className="section-title">Habilidades</h2>
+              <div className="skills-grid">
+                <ul className="skills-list">
+                  <h3 className="skills-category">Lenguajes</h3>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>React</li>
                 </ul>
-                <ul>
-                  {" "}
-                  <h2>herramientas</h2>
-                  <li>vscode</li>
-                  <li>figma</li>
-                  <li>photoshop</li>
-                  <li>illustrator</li>
+
+                <ul className="skills-list">
+                  <h3 className="skills-category">Herramientas</h3>
+                  <li>VSCode</li>
+                  <li>Figma</li>
+                  <li>Photoshop</li>
                 </ul>
-                <ul>
-                  <h2>idiomas</h2>
-                  <li>español</li>
-                  <li>ingles</li>
-                  <li>frances</li>
+
+                <ul className="skills-list">
+                  <h3 className="skills-category">Idiomas</h3>
+                  <li>Español (Nativo)</li>
+                  <li>Inglés (Intermedio)</li>
                 </ul>
-                <ul>
-                  <h2>Frameworks</h2>
-                  <li>bootstrap</li>
-                  <li>materialize</li>
-                  <li>bulma</li>
+
+                <ul className="skills-list">
+                  <h3 className="skills-category">Frameworks y Librerías</h3>
+                  <li>Bootstrap</li>
+                  <li>Materialize</li>
                 </ul>
               </div>
-            </div>
+            </section>
           </div>
         </div>
       </div>
+      </main>
     </>
   )
 }
