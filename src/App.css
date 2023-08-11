@@ -1,93 +1,12 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-}
-main{
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 20px;
-}
-
-/* Estilos para la sección de título */
-
-.title-section {
+.counter-section {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 20px 0;
-  align-items: center;
   justify-content: center;
-    background-color: #333;
-
-    border-radius: 50px;
-    color: white;
+  align-items: center;
+  gap: 10px;
 }
 
-.main-title {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-.subtitle {
-    margin-top: 10px;
-}
-
-/* Estilos para la grilla */
-.container {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-}
-
-.grid-30-70 {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    gap: 20px;
-    width: 80%;
-    max-width: 1200px;
-}
-
-/* Estilos para la columna de la izquierda (negro con letras blancas) */
-.side-panel {
-    background-color: #333;
-    padding: 20px;
-    color: white;
-}
-
-.section-title,
-.job-title,
-.course-title,
-.skills-category {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.section-description,
-.job-description,
-.course-description,
-.contact-item a {
-    color: white;
-    text-decoration: none;
-}
-
-.contact-item a:hover {
-    text-decoration: underline;
-}
-
-/* Estilos para la columna de la derecha (blanco con letras negras) */
-.main-panel {
-    background-color: #fff;
-    padding: 20px;
-    color: #333;
-}
-
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.skills-list {
-    list-style-type: none;
-    padding: 0;
+.counter-section button {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
 }
